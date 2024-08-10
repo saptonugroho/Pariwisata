@@ -1,0 +1,205 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Pariwisata Pacitan</title>
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="navbar-container" id="navbar">
+      <div class="logo">
+        <img src="img/pacitan.png" alt="Pacitan" class="imglogo" />
+      </div>
+      <nav class="nav-list">
+        <a href="#" class="btnnav">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </a>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#wisata">Wisata</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end header -->
+    <main>
+      <div class="content" id="beranda">
+        <div class="content-description">
+          <h1 class="title">Kabupaten Pacitan</h1>
+          <p>
+            Ada banyak wisata alam sangat indah di Pacitan. Mulai dari pantai
+            sampai berbagai gua . Banyaknya gua di wilayah ini membuatnya
+            dijuluki sebagai "Kota 1001 Gua".
+          </p>
+          <a href="#wisata" class="button">Lanjut</a>
+        </div>
+        <div class="content-image">
+          <img src="img/wonderfull.png" alt="Dicoding Indonesia" />
+        </div>
+      </div>
+      <!-- Article Wisata-->
+      <div class="content-description" id="wisata">
+        <h1>WISATA</h1>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+              <div
+                class="card-img-hover"
+                style="background-image: url(img/klayar.jpeg)"
+              ></div>
+            </a>
+
+            <div class="card-info">
+              <span class="card-category">Pantai</span>
+              <h3 class="card-title">Pantai Klayar</h3>
+              <span> By <a href="" class="card-admin">Sapto Nugroho</a> </span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+              <div
+                class="card-img-hover"
+                style="background-image: url(img/goagong.jpeg)"
+              ></div>
+            </a>
+
+            <div class="card-info">
+              <span class="card-category">Goa</span>
+              <h3 class="card-title">Goa Gong</h3>
+              <span> By <a href="" class="card-admin">Sapto Nugroho</a> </span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+              <div
+                class="card-img-hover"
+                style="background-image: url(img/song.jpeg)"
+              ></div>
+            </a>
+
+            <div class="card-info">
+              <span class="card-category">Goa</span>
+              <h3 class="card-title">Song Terus</h3>
+              <span> By <a href="" class="card-admin">Sapto Nugroho</a> </span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+              <div
+                class="card-img-hover"
+                style="background-image: url(img/soge.jpeg)"
+              ></div>
+            </a>
+
+            <div class="card-info">
+              <span class="card-category">Pantai</span>
+              <h3 class="card-title">Pantai Soge</h3>
+              <span> By <a href="" class="card-admin">Sapto Nugroho</a> </span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+              <div
+                class="card-img-hover"
+                style="background-image: url(img/maron.jpeg)"
+              ></div>
+            </a>
+
+            <div class="card-info">
+              <span class="card-category">Sungai</span>
+              <h3 class="card-title">Sungai Maron</h3>
+              <span> By <a href="" class="card-admin">Sapto Nugroho</a> </span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+              <div
+                class="card-img-hover"
+                style="background-image: url(img/kasap.jpeg)"
+              ></div>
+            </a>
+
+            <div class="card-info">
+              <span class="card-category">Pantai</span>
+              <h3 class="card-title">Pantai Kasap</h3>
+              <span> By <a href="" class="card-admin">Sapto Nugroho</a> </span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- end article -->
+
+      <aside>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a onclick="OpenAside()">
+                <i class="fas fa-user-circle"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="user-info" style="display: none">
+          <ul>
+            <button id="close-button" onclick="CloseAside()">&times;</button>
+            <h2>Biodata</h2>
+            <hr />
+            <img src="img/pasfoto.jpg" width="20px" alt="Profile Image" />
+            <p>Sapto Nugroho</p>
+            <p>saptonugrohoid@gmail.com</p>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Alamat</h4>
+            <p>Jl. xxxxx No.x</p>
+          </div>
+          <div class="footer-col">
+            <h4>Wisata</h4>
+            <ul>
+              <li><a href="#">Pantai</a></li>
+              <li><a href="#">Goa</a></li>
+              <li><a href="#">Sungai</a></li>
+              <li><a href="#">Bukit</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontak</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
